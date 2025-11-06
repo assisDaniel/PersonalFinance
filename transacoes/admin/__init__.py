@@ -1,0 +1,4 @@
+from transacoes.admin.UserAdmin import UserAdmin, GroupAdmin
+from transacoes.admin.TransacaoAdmin import TransacaoAdmin
+from transacoes.admin.CategoriaAdmin import CategoriaAdmin
+from transacoes.admin.MetodoPagamentoAdmin import MetodoPagamentoAdmin
