@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: 210 30% 8%;
+    --foreground: 210 20% 98%;
+
+    --card: 210 25% 12%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 210 25% 12%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 180 80% 50%;
+    --primary-foreground: 210 30% 8%;
+
+    --secondary: 210 20% 18%;
+    --secondary-foreground: 210 20% 98%;
+
+    --muted: 210 20% 18%;
+    --muted-foreground: 210 15% 65%;
+
+    --accent: 43 96% 56%;
+    --accent-foreground: 210 30% 8%;
+
+    --income: 142 76% 42%;
+    --income-foreground: 210 30% 8%;
+
+    --expense: 0 84% 65%;
+    --expense-foreground: 210 30% 8%;
+
+    --destructive: 0 84% 65%;
+    --destructive-foreground: 210 30% 8%;
+
+    --border: 210 20% 20%;
+    --input: 210 20% 20%;
+    --ring: 180 80% 50%;
+
+    --sidebar-background: 210 25% 10%;
+    --sidebar-foreground: 210 20% 98%;
+    --sidebar-primary: 180 80% 50%;
+    --sidebar-primary-foreground: 210 30% 8%;
+    --sidebar-accent: 210 20% 18%;
+    --sidebar-accent-foreground: 210 20% 98%;
+    --sidebar-border: 210 20% 20%;
+    --sidebar-ring: 180 80% 50%;
+
+    --chart-1: 180 80% 50%;
+    --chart-2: 142 76% 42%;
+    --chart-3: 43 96% 56%;
+    --chart-4: 0 84% 65%;
+    --chart-5: 280 70% 65%;
+  }
+
+  .light {
+    --background: 210 20% 98%;
+    --foreground: 210 15% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 15% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 15% 12%;
+
+    --primary: 180 80% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 17% 95%;
+    --secondary-foreground: 210 15% 12%;
+
+    --muted: 210 17% 95%;
+    --muted-foreground: 210 10% 50%;
+
+    --accent: 43 96% 56%;
+    --accent-foreground: 210 15% 12%;
+
+    --income: 142 76% 36%;
+    --income-foreground: 0 0% 100%;
+
+    --expense: 0 84% 60%;
+    --expense-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 180 80% 45%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 210 15% 12%;
+    --sidebar-primary: 180 80% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 17% 95%;
+    --sidebar-accent-foreground: 210 15% 12%;
+    --sidebar-border: 210 20% 90%;
+    --sidebar-ring: 180 80% 45%;
+
+    --chart-1: 180 80% 45%;
+    --chart-2: 142 76% 36%;
+    --chart-3: 43 96% 56%;
+    --chart-4: 0 84% 60%;
+    --chart-5: 280 70% 60%;
+  }
+
+}
