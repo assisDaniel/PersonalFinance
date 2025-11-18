@@ -5,6 +5,11 @@ from .base import *
 DEBUG = True
 #
 ALLOWED_HOSTS = []
+CORS_ALLOW_CREDENTIALS = True
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:5173',
+]
+CORS_ALLOWED_ORIGINS = CSRF_TRUSTED_ORIGINS
 
 ################
 
@@ -33,7 +38,6 @@ STATIC_URL = '/PersonalFinance/static/'
 STATICFILES_DIRS = [
     # os.path.join(BASE_DIR, "static"),  # Comentado para evitar duplicação com STATIC_ROOT
     os.path.join(BASE_DIR.parent, "static-global/"),  # Pasta de estáticos compartilhados entre projetos
-    os.path.join(BASE_DIR.parent, "tailwindConf/static/"),  # Pasta de estáticos compartilhados entre projetos
 ]
 
 # URL base para acessar arquivos de mídia (uploads de usuários) no navegador

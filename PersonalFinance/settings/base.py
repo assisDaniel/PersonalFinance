@@ -45,11 +45,11 @@ DEFAULT_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
 ]
 
 LOCAL_APPS = [
     'transacoes.apps.TransacoesConfig',
-    'tailwindConf.apps.TailwindConfConfig',
 ]
 
 THIRD_PARTY_APPS = [
@@ -61,15 +61,13 @@ THIRD_PARTY_APPS = [
     "unfold.contrib.guardian",  
     "unfold.contrib.simple_history",
     "djmoney",
-    "tailwind",
 ]
 
 INSTALLED_APPS = THIRD_PARTY_APPS+DEFAULT_APPS+LOCAL_APPS
 
-TAILWIND_APP_NAME = 'tailwindConf'
-
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
